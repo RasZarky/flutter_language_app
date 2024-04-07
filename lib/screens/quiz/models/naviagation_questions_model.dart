@@ -40,130 +40,202 @@ class NavigationsOption {
   });
 }
 
+
 final navigateQuestionsList = [
   NavigateQuestion(
-    text:
-        "I am a widget that manages a stack of child widgets and allows for navigating between them. What am I?",
+    text: "What part of speech describes a verb, adjective, or adverb and answers when? where? how? and to what extent?",
     options: [
-      const NavigationsOption(text: "Route", isCorrect: false),
-      const NavigationsOption(text: "Scaffold", isCorrect: false),
-      const NavigationsOption(text: "Navigator", isCorrect: true),
-      const NavigationsOption(text: "PageView", isCorrect: false),
+      const NavigationsOption(text: "Adverb", isCorrect: true),
+      const NavigationsOption(text: "Verb", isCorrect: false),
+      const NavigationsOption(text: "Adjective", isCorrect: false),
+      const NavigationsOption(text: "Preposition", isCorrect: false),
     ],
     id: 0,
-    correctAnswer: const NavigationsOption(text: "Navigator", isCorrect: true),
+    correctAnswer: const NavigationsOption(text: "Adverb", isCorrect: true),
+
   ),
   NavigateQuestion(
     text:
-        " I am a method that removes the current route from the stack and returns to the previous route. What am I?",
+    "What part of speech connects words or groups of words? Examples are for, and, nor, but, or, yet, and so?",
     options: [
-      const NavigationsOption(text: "Navigator.push()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.pop()", isCorrect: true),
-      const NavigationsOption(
-          text: "Navigator.removeRoute()", isCorrect: false),
-      const NavigationsOption(text: " Route.dispose()", isCorrect: false),
+      const NavigationsOption(text: "Conjunction ", isCorrect: true),
+      const NavigationsOption(text: "Interjection", isCorrect: false),
+      const NavigationsOption(text: "Preposition", isCorrect: false),
+      const NavigationsOption(text: "Adverb", isCorrect: false),
     ],
     id: 1,
-    correctAnswer:
-        const NavigationsOption(text: "Navigator.pop()", isCorrect: true),
+    correctAnswer: const NavigationsOption(text: "Conjunction", isCorrect: true),
+
   ),
   NavigateQuestion(
     text:
-        "I am a widget property that must be passed to navigation methods like Navigator.push() to specify the next screen. What am I?",
+    "What part of speech substitutes for a noun or pronoun? Examples are we, they,  him, I, you, me, she...",
     options: [
-      const NavigationsOption(text: "context", isCorrect: true),
-      const NavigationsOption(text: "Scaffold", isCorrect: false),
-      const NavigationsOption(text: "State", isCorrect: false),
-      const NavigationsOption(text: "Build", isCorrect: false),
+      const NavigationsOption(text: "Pronoun ", isCorrect: true),
+      const NavigationsOption(text: "Conjunction", isCorrect: false),
+      const NavigationsOption(text: "Verb", isCorrect: false),
+      const NavigationsOption(text: "Noun", isCorrect: false),
     ],
     id: 2,
-    correctAnswer: const NavigationsOption(text: "context", isCorrect: true),
-  ),
+    correctAnswer: const NavigationsOption(text: "Pronoun", isCorrect: true),
 
+  ),
   NavigateQuestion(
     text:
-        " I am the method that closes all routes in the history stack to pop to the first route. What am I?",
+    "What part of speech describes a noun or pronoun and answers the questions which one(s)? how many/much? or what kind(s)",
     options: [
-      const NavigationsOption(text: "Navigator.popUntil()", isCorrect: true),
-      const NavigationsOption(text: " Navigator.reset()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.exitAll()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.clear()", isCorrect: false),
+      const NavigationsOption(text: "Verb", isCorrect: false),
+      const NavigationsOption(text: "Adverb", isCorrect: false),
+      const NavigationsOption(text: "Adjective ", isCorrect: true),
+      const NavigationsOption(text: "Preposition", isCorrect: false),
     ],
     id: 3,
     correctAnswer:
-        const NavigationsOption(text: "Navigator.popUntil()", isCorrect: true),
+    const NavigationsOption(text: "Adjective ", isCorrect: true),
+
   ),
-  // other 4
   NavigateQuestion(
     text:
-        " I am a method that adds a named route to the top of the navigator stack. Who am I?",
+    "Which part of speech expresses a mild or sudden burst of emotion? Examples are wow! or no,",
     options: [
-      const NavigationsOption(text: "Navigator.navigate()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.openRoute()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.routeTo()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.pushNamed()", isCorrect: true),
+      const NavigationsOption(text: "Adverb", isCorrect: false),
+      const NavigationsOption(text: "Noun", isCorrect: false),
+      const NavigationsOption(text: "Adjective", isCorrect: false),
+      const NavigationsOption(text: "Interjection ", isCorrect: true),
     ],
     id: 4,
-    correctAnswer: const NavigationsOption(
-      text: " Navigator.pushNamed()",
-      isCorrect: true,
-    ),
+    correctAnswer: const NavigationsOption(text: "Interjection ", isCorrect: true),
+
   ),
   NavigateQuestion(
-    text:
-        " I am a method that replaces the entire route stack with a single route. Who am I?",
+    text: "Which part of speech describes the distance/placement/proximity of one word and another word in a sentence? Examples are on, to, behind, with...",
     options: [
-      const NavigationsOption(
-          text: " Navigator.pushReplacement()", isCorrect: true),
-      const NavigationsOption(text: "Navigator.reset()", isCorrect: false),
-      const NavigationsOption(
-          text: " Navigator.replaceAll()", isCorrect: false),
-      const NavigationsOption(
-          text: "  Navigator.clearPush()", isCorrect: false),
+      const NavigationsOption(text: "Preposition ", isCorrect: true),
+      const NavigationsOption(text: "Adverb", isCorrect: false),
+      const NavigationsOption(text: "Interjection", isCorrect: false),
+      const NavigationsOption(text: "Noun", isCorrect: false),
     ],
     id: 5,
-    correctAnswer: const NavigationsOption(
-        text: "Navigator.pushReplacement()", isCorrect: true),
-  ),
+    correctAnswer: const NavigationsOption(text: "Preposition", isCorrect: true),
 
+  ),
   NavigateQuestion(
     text:
-        "I am a method that closes routes until a condition is met. Who am I?",
+    "What part of speech describes a person, place, thing, or idea? Examples are house, jury, determination.",
     options: [
-      const NavigationsOption(text: "Navigator.exitUntil()", isCorrect: false),
-      const NavigationsOption(
-          text: "Navigator.closeAllUntil(),", isCorrect: false),
-      const NavigationsOption(text: "Navigator.popWhile()", isCorrect: false),
-      const NavigationsOption(text: " Navigator.popUntil()", isCorrect: true),
+      const NavigationsOption(text: "Interjection", isCorrect: false),
+      const NavigationsOption(text: "Pronoun", isCorrect: false),
+      const NavigationsOption(text: "Adjective", isCorrect: false),
+      const NavigationsOption(text: "Noun ", isCorrect: true),
     ],
     id: 6,
     correctAnswer:
-        const NavigationsOption(text: " Navigator.popUntil()", isCorrect: true),
+    const NavigationsOption(text: "Noun ", isCorrect: true),
+
   ),
   NavigateQuestion(
     text:
-        "I am an event fired when a route is popped to transition back. Who am I?",
+    "What type of pronouns are I, we, she, they, him, and us? They refer to 'people.'",
     options: [
-      const NavigationsOption(text: "onWillPop", isCorrect: true),
-      const NavigationsOption(text: "onPop", isCorrect: false),
-      const NavigationsOption(text: "didPop", isCorrect: false),
-      const NavigationsOption(text: "popRoute", isCorrect: false),
+      const NavigationsOption(text: "Relative pronoun", isCorrect: false),
+      const NavigationsOption(text: "Personal pronoun ", isCorrect: true),
+      const NavigationsOption(text: "Reflexive pronoun", isCorrect: false),
+      const NavigationsOption(text: "Reciprocal pronoun", isCorrect: false),
     ],
     id: 7,
-    correctAnswer: const NavigationsOption(text: "onWillPop", isCorrect: true),
-  ),
+    correctAnswer: const NavigationsOption(text: "Personal pronoun", isCorrect: true),
 
-  NavigateQuestion(
-    text:
-        "I am a method that adds a route to the history without removing current. Who am I?",
-    options: [
-      const NavigationsOption(text: "openRoute()", isCorrect: false),
-      const NavigationsOption(text: "onDestroy()", isCorrect: false),
-      const NavigationsOption(text: "Navigator.push()", isCorrect: true),
-      const NavigationsOption(text: "overlayRoute()", isCorrect: false),
-    ],
-    id: 8,
-    correctAnswer:
-        const NavigationsOption(text: "Navigator.push()", isCorrect: true),
   ),
+  // WidgetQuestion(
+  //     text:
+  //         "I give Material apps their signature reactive ink splash effect. Who am I?",
+  //     options: [
+  //       const WiidgetOption(text: "InkWell", isCorrect: true),
+  //       const WiidgetOption(text: "GestureDetector", isCorrect: false),
+  //       const WiidgetOption(text: "AbsorbPointer", isCorrect: false),
+  //       const WiidgetOption(text: "IgnorePointer", isCorrect: false),
+  //     ],
+  //     id: 8,
+  //     correctAnswer: const WiidgetOption(text: "InkWell", isCorrect: true)),
+  // WidgetQuestion(
+  //     text:
+  //         "I am a widget that provides a material design styled line divider. What am I?",
+  //     options: [
+  //       const WiidgetOption(text: "Divider", isCorrect: true),
+  //       const WiidgetOption(text: "SizedBox", isCorrect: false),
+  //       const WiidgetOption(text: "Container", isCorrect: false),
+  //       const WiidgetOption(text: "ListTile", isCorrect: false),
+  //     ],
+  //     id: 9,
+  //     correctAnswer: const WiidgetOption(text: "Divider", isCorrect: true)),
+  // WidgetQuestion(
+  //     text:
+  //         "I am a widget that displays a circular material design spinner to indicate loading. What am I?",
+  //     options: [
+  //       const WiidgetOption(text: "LinearProgressIndicator", isCorrect: false),
+  //       const WiidgetOption(text: "RefreshIndicator", isCorrect: false),
+  //       const WiidgetOption(text: "CircularProgressIndicator", isCorrect: true),
+  //       const WiidgetOption(text: "LoadingIndicator", isCorrect: false),
+  //     ],
+  //     id: 10,
+  //     correctAnswer: const WiidgetOption(
+  //         text: "CircularProgressIndicator", isCorrect: true)),
+  // WidgetQuestion(
+  //     text:
+  //         "I am a widget that displays a material design styled tooltip when the user hovers over it. What am I?",
+  //     options: [
+  //       const WiidgetOption(text: "Popover", isCorrect: false),
+  //       const WiidgetOption(text: "Tooltip", isCorrect: true),
+  //       const WiidgetOption(text: "Snackbar", isCorrect: false),
+  //       const WiidgetOption(text: "HintText", isCorrect: false),
+  //     ],
+  //     id: 11,
+  //     correctAnswer: const WiidgetOption(text: "Tooltip", isCorrect: true)),
+  // WidgetQuestion(
+  //     text:
+  //         "I am the folder containing assets like images, fonts, json files etc. What am I?",
+  //     options: [
+  //       const WiidgetOption(text: "static", isCorrect: false),
+  //       const WiidgetOption(text: "assets", isCorrect: true),
+  //       const WiidgetOption(text: "resources", isCorrect: false),
+  //       const WiidgetOption(text: "images", isCorrect: false),
+  //     ],
+  //     id: 12,
+  //     correctAnswer: const WiidgetOption(text: "assets", isCorrect: true)),
+  // WidgetQuestion(
+  //     text:
+  //         "I am the programming language used to build Flutter apps. What am I?",
+  //     options: [
+  //       const WiidgetOption(text: "Dart", isCorrect: true),
+  //       const WiidgetOption(text: "Java", isCorrect: false),
+  //       const WiidgetOption(text: "Swift", isCorrect: false),
+  //       const WiidgetOption(text: "Kotlin", isCorrect: false),
+  //     ],
+  //     id: 13,
+  //     correctAnswer: const WiidgetOption(text: "Dart", isCorrect: true)),
+  // WidgetQuestion(
+  //   text:
+  //       "I am a mechanism that allows you to incorporate platform-specific UI elements into a Flutter app. What am I?",
+  //   options: [
+  //     const WiidgetOption(text: "Native view", isCorrect: false),
+  //     const WiidgetOption(text: "Platform channels", isCorrect: true),
+  //     const WiidgetOption(text: "JNI", isCorrect: false),
+  //     const WiidgetOption(text: "Bridge", isCorrect: false),
+  //   ],
+  //   id: 14,
+  //   correctAnswer:
+  //       const WiidgetOption(text: "Platform channels", isCorrect: true),
+  // ),
+  // WidgetQuestion(
+  //   text:
+  //       "I am a property that uniquely identifies a widget and allows it to be updated efficiently. What am I?",
+  //   options: [
+  //     const WiidgetOption(text: "key", isCorrect: true),
+  //     const WiidgetOption(text: "id", isCorrect: false),
+  //     const WiidgetOption(text: "name", isCorrect: false),
+  //     const WiidgetOption(text: "tag", isCorrect: false),
+  //   ],
+  //   id: 15,
+  //   correctAnswer: const WiidgetOption(text: "key", isCorrect: true),
+  // ),
 ];
